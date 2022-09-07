@@ -95,7 +95,7 @@ def get_post(post):
 def get_custom_config():
     context = {"cdn_prev": get_cdn(), "cdnjs": get_cdnjs(), "QEXO_NAME": get_setting("QEXO_NAME")}
     if not context["QEXO_NAME"]:
-        save_setting('QEXO_NAME', 'Hexo管理面板')
+        save_setting('QEXO_NAME', 'ACbug管理面板')
         context["QEXO_NAME"] = get_setting("QEXO_NAME")
     context["QEXO_SPLIT"] = get_setting("QEXO_SPLIT")
     if not context["QEXO_SPLIT"]:
@@ -104,14 +104,14 @@ def get_custom_config():
     context["QEXO_LOGO"] = get_setting("QEXO_LOGO")
     if not context["QEXO_LOGO"]:
         save_setting('QEXO_LOGO',
-                     'https://unpkg.com/qexo-static@1.4.0/assets' +
-                     '/img/brand/qexo.png')
+                     'https://img1.i-nmb.cn' +
+                     '/htgl.png')
         context["QEXO_LOGO"] = get_setting("QEXO_LOGO")
     context["QEXO_ICON"] = get_setting("QEXO_ICON")
     if not context["QEXO_ICON"]:
         save_setting('QEXO_ICON',
-                     'https://unpkg.com/qexo-static@1.4.0/assets' +
-                     '/img/brand/favicon.ico')
+                     'https://img1.i-nmb.cn' +
+                     '/favicon.ico')
         context["QEXO_ICON"] = get_setting("QEXO_ICON")
     return context
 
